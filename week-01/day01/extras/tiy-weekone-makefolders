@@ -1,0 +1,11 @@
+#!/bin/bash
+
+number=0
+until [ "$number" -ge 5 ]; do
+    #echo "Number = $number"
+    number=$((number + 1))
+    mkdir WORK/tiy/week-01/day0$number
+    mkdir WORK/tiy/week-01/day0$number/assignments
+    mkdir WORK/tiy/week-01/day0$number/examples
+    touch WORK/tiy/week-01/day0$number/README.md
+done
