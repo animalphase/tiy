@@ -181,3 +181,280 @@ div.example.g img {
   float: right;
   margin: 0 0 1em 1em;
 }
+
+
+div.example.h {
+
+}
+
+div.example.h .floating-box {
+  border-color: green;
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+}
+
+div.example.h section {
+  border: 5px solid red;
+}
+
+.after-box {
+  clear: left;
+}
+
+
+div.example.i {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+div.example.i img {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+div.example.container-j {
+   position: relative;
+   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+  div.example.container-j * {
+     -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+
+div.example.container-j nav {
+  float: left;
+  width: 200px;
+  border: 5px solid green;
+}
+
+div.example.container-j section {
+  /* position is static by default */
+  border: 5px solid orange;
+  margin-left: 200px;
+}
+
+div.example.container-j footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+}
+
+div.example.container-j footer {
+  border: 5px solid red;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+}
+
+
+
+
+
+
+div.example.k0 {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+div.example.k0 img {
+  float: right;
+  width: 50%;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+
+
+
+
+
+
+div.example.container-k {
+   position: relative;
+   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+  div.example.container-k * {
+     -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+
+div.example.container-k nav {
+  float: left;
+  width: 33%;
+  border: 5px solid green;
+}
+
+div.example.container-k section {
+  /* position is static by default */
+  border: 5px solid orange;
+  margin-left: 33%;
+}
+
+div.example.container-k footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+}
+
+div.example.container-k footer {
+  border: 5px solid red;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+}
+
+
+
+
+
+
+
+
+div.example.container-l {
+   position: relative;
+   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+  div.example.container-l * {
+     -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+
+div.example.container-l nav {
+  border: 5px solid green;
+}
+
+div.example.container-l section {
+  /* position is static by default */
+  border: 5px solid orange;
+}
+
+div.example.container-l footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+}
+
+div.example.container-l footer {
+  border: 5px solid red;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+}
+
+@media screen and (min-width:600px) {
+  div.example.container-l nav {
+    float: left;
+    width: 33%;
+  }
+  div.example.container-l section {
+    margin-left: 33%;
+  }
+}
+@media screen and (max-width:599px) {
+  div.example.container-l nav li {
+    display: inline;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+div.example.container-m0 {
+
+}
+
+div.example.container-m0 .box {
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+  border: 5px solid brown;
+}
+
+div.example.container-m0 .after-box {
+  clear: left;
+  border: 5px solid cyan;
+}
+
+
+div.example.container-m1 {
+
+}
+
+div.example.container-m1 .box {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+  border: 5px solid brown;
+}
+
+div.example.container-m1 .after-box {
+  clear: left;
+  border: 5px solid cyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clearfix from https://css-tricks.com/snippets/css/clear-fix/ */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
