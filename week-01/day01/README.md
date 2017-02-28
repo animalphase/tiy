@@ -10,4 +10,6 @@
 
 4. started doing this here **markdown assignment**
 
-5. next up: basic webpage. created using some colors and an image from an old site. on surge at http://ce-w01-d01.surge.sh
+5. next up: **basic webpage**. created using some colors and an image from an old site.
+
+6. **on surge at http://ce-w01-d01.surge.sh**

@@ -1,3 +1,5 @@
 # TIY front-end engineering course, charli elwonger
 
-repo for all of charli's assignments at the iron yard, front-end engineering 12 week course.
+repo for all of charli's assignments at The Iron Yard Front-end Engineering 12 week course.
+
+this course began february 27, 2017.
