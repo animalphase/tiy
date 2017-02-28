@@ -1,7 +1,5 @@
 # Week 1 > Day 01
 
-----
-
 1. created a **bash script** to generate directories and README files for every day of this week.
 
  > this was my first real bash script! also had to figure out how to set up `.bash_profile` and `.zshrc` to play nicely, allowing global (?) running of this script from `~/bin`. the script currently lives there. made a duplicate of this file and put it in the local day01 'extras' directory as well.

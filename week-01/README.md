@@ -1,1 +1,1 @@
-#TIY front-end, week 1
+#TIY front-end, Week 1
