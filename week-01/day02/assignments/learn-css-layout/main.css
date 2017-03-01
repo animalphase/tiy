@@ -148,7 +148,6 @@ div.example.container-f nav {
 }
 
 div.example.container-f section {
-  /* position is static by default */
   border: 5px solid orange;
   margin-left: 200px;
 }
@@ -241,7 +240,6 @@ div.example.container-j nav {
 }
 
 div.example.container-j section {
-  /* position is static by default */
   border: 5px solid orange;
   margin-left: 200px;
 }
@@ -305,7 +303,6 @@ div.example.container-k nav {
 }
 
 div.example.container-k section {
-  /* position is static by default */
   border: 5px solid orange;
   margin-left: 33%;
 }
@@ -351,7 +348,6 @@ div.example.container-l nav {
 }
 
 div.example.container-l section {
-  /* position is static by default */
   border: 5px solid orange;
 }
 
@@ -426,7 +422,6 @@ div.example.container-m1 .box {
 }
 
 div.example.container-m1 .after-box {
-  clear: left;
   border: 5px solid cyan;
 }
 
@@ -439,11 +434,137 @@ div.example.container-m1 .after-box {
 
 
 
+div.example.container-n {
+  padding: 0;
+   position: relative;
+   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+  div.example.container-n * {
+     -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+
+
+div.example.container-n nav {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  margin-right: -5px;
+  border: 5px solid green;
+}
+
+div.example.container-n .column {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+  border: 5px solid black;
+}
+
+div.example.container-n section {
+  border: 5px solid orange;
+}
 
 
 
 
 
+
+
+div.example.o {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+div.example.o p {
+  -moz-column-count: 3;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1em;
+  column-count: 3;
+  column-gap: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+div.example.container-p {
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+
+div.example.container-p nav {
+  width: 200px;
+  border: 5px solid green;
+}
+
+div.example.container-p .column {
+  webkit-flex: 1;
+  flex: 1;
+  border: 5px solid black;
+}
+
+div.example.container-p section {
+  border: 5px solid orange;
+}
+
+
+
+
+div.example.container-p2 {
+  display: -webkit-flex;
+  display: flex;
+  padding: 0;
+}
+
+div.example.container-p2 > div{
+  border: 5px solid grey;
+}
+
+div.example.container-p2 .initial {
+  -webkit-flex: initial;
+          flex: initial;
+  width: 200px;
+  min-width: 100px;
+}
+div.example.container-p2 .none {
+  -webkit-flex: none;
+         flex: none;
+   width: 200px;
+}
+div.example.container-p2 .flex1 {
+  -webkit-flex: 1;
+          flex: 1;
+}
+div.example.container-p2 .flex2 {
+  -webkit-flex: 2;
+          flex: 2;
+}
+
+
+
+div.example.container-p3 {
+  height: 300px;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
 
 
 
