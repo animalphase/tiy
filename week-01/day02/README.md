@@ -6,6 +6,6 @@
 
 3. **Surged at http://cagey-interest.surge.sh**
 
-4. Assignment 2: did the octocats Assignment
+4. Assignment 2: did the **Octocats Assignment**
 
 5. **Surged at http://ce-w01-d02-octocats.surge.sh/**
