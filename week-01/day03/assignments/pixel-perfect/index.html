@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>airbb - vaction with ur bb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
   </head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="main.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+
 
   <body>
 
@@ -26,7 +27,7 @@
         <a href="#">Trips</a>
         <a href="#">Messages</a>
         <a href="#">Help</a>
-        <a class="profile-link" href="#"><img src="" alt=""><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+        <a class="profile-link" href="#"><img src="test.jpg" alt=""><i class="fa fa-user-circle" aria-hidden="true"></i></a>
       </nav>
 
     </header>
@@ -61,7 +62,7 @@
 
           <div class="booking-guests">
             <label for="">Guests</label>
-            <input type="text" name="" value="" placeholder="1 guest">
+            <button type="button" name="Select number of guests">1 guest<i class="fa fa-angle-down" aria-hidden="true"></i></button>
           </div>
 
           <div class="booking-submit">
@@ -84,24 +85,9 @@
 
         <h3>Most popular experiences</h3>
 
-        <div class="main-list-item">
-          <a href="#">
-            <img src="" alt="" />
-            <div class="item-description">
-              <div class="main-info">
-                <span class="price">$66</span> 2 hours • food market &amp; food tastings
-              </div>
-              <div class="reviews">
-                <span class="rating 5"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                177 reviews
-              </div>
-            </div>
-          </a>
-        </div>
 
-        <div class="main-list-item">
-          <a href="#">
-            <img src="" alt="" />
+          <a class="main-list-item" href="#">
+            <img src="img/main-list-01.jpg" alt="" />
             <div class="item-description">
               <div class="main-info">
                 <span class="price">$66</span> 2 hours • food market &amp; food tastings
@@ -112,26 +98,23 @@
               </div>
             </div>
           </a>
-        </div>
 
-        <div class="main-list-item">
-          <a href="#">
-            <img src="" alt="" />
-            <div class="item-description">
-              <div class="main-info">
-                <span class="price">$66</span> 2 hours • food market &amp; food tastings
-              </div>
-              <div class="reviews">
-                <span class="rating 5"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-                177 reviews
-              </div>
+        <a class="main-list-item" href="#">
+          <img class="item-image" src="img/main-list-02.jpg" alt="" />
+          <div class="item-description">
+            <div class="main-info">
+              <span class="price">$66</span> 2 hours • food market &amp; food tastings
             </div>
-          </a>
-        </div>
+            <div class="reviews">
+              <span class="rating 5"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
+              177 reviews
+            </div>
+          </div>
+        </a>
 
-        <div class="main-list-item">
-          <a href="#">
-            <img src="" alt="" />
+
+          <a class="main-list-item" href="#">
+            <img src="img/main-list-03.jpg" alt="" />
             <div class="item-description">
               <div class="main-info">
                 <span class="price">$66</span> 2 hours • food market &amp; food tastings
@@ -142,7 +125,22 @@
               </div>
             </div>
           </a>
-        </div>
+
+
+
+          <a class="main-list-item" href="#">
+            <img src="img/main-list-04.jpg" alt="" />
+            <div class="item-description">
+              <div class="main-info">
+                <span class="price">$66</span> 2 hours • food market &amp; food tastings
+              </div>
+              <div class="reviews">
+                <span class="rating 5"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
+                177 reviews
+              </div>
+            </div>
+          </a>
+
 
       </section>
 
@@ -156,7 +154,7 @@
 
         <div class="main-list-item">
           <a href="#">
-            <img src="" alt="" />
+            <img src="tmp.jpg" alt="" />
             <div class="item-description">
               <div class="main-info">
                 <span class="price">$66</span> Entire home/ap • 2 beds
@@ -174,7 +172,7 @@
 
         <div class="main-list-item">
           <a href="#">
-            <img src="" alt="" />
+            <img src="tmp.jpg" alt="" />
             <div class="item-description">
               <div class="main-info">
                 <span class="price">$66</span> Entire home/ap • 2 beds
@@ -200,7 +198,7 @@
 
     <footer>
       <section class="wrapper">
-        
+
       </section>
     </footer>
   </body>
