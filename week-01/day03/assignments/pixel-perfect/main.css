@@ -16,6 +16,11 @@ h1 {
   font-weight: 200;
 }
 
+h3 {
+  font-size: 19px;
+  font-weight: normal;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -76,9 +81,9 @@ nav {
 
 form.booking {
   display: flex;
-  border: 1px solid #ddd;
+  border: 1px solid #DCE0E0;
   border-radius: 4px;
-  box-shadow: 0px 1px 10px -2px rgba(140,140,140,.41);
+  box-shadow: 0px 1px 4px -1px rgba(140,140,140,.41);
 }
   form.booking > div {
     padding: 15px 16px 8px 16px;
@@ -96,7 +101,7 @@ form.booking {
   div.booking-where {
     flex: 2;
     order: 1;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #DCE0E0;
   }
     div.booking-where input {
       width: 100%;
@@ -105,7 +110,7 @@ form.booking {
   div.booking-when {
     flex: 2;
     order: 2;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #DCE0E0;
   }
   div.booking-when input {
     order: 1;
@@ -120,6 +125,28 @@ form.booking {
     flex: 1;
     order: 3;
   }
+    div.booking-guests input {
+
+    }
+    div.booking-guests input::after {
+        content: '<i class="fa fa-angle-down" aria-hidden="true"></i>';
+    }
+    /* yay placeholder browser support */
+    div.booking-guests input::placeholder {
+      color: #484848 !important;
+    }
+    div.booking-guests input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #484848 !important;
+    }
+    div.booking-guests input::-moz-placeholder { /* Firefox 19+ */
+      color: #484848 !important;
+    }
+    div.booking-guests input:-ms-input-placeholder { /* IE 10+ */
+      color: #484848 !important;
+    }
+    div.booking-guests input:-moz-placeholder { /* Firefox 18- */
+      color: #484848 !important;
+    }
 
   div.booking-submit {
     flex: 1;
@@ -139,6 +166,30 @@ form.booking {
     }
 
 
+.simple-search {
+  border: 1px solid #DCE0E0;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px -1px rgba(140,140,140,.41);
+  margin: 40px 0;
+  padding: 12px 14px 14px 14px;
+}
+  .simple-search p {
+    vertical-align: middle;
+    color: #767676;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .simple-search i {
+    display: block;
+    line-height: 40px;
+    position: absolute;
+    right: 0;top: 0px;
+    font-size: 30px;
+  }
+
 
 
 .main-list {
@@ -147,15 +198,16 @@ form.booking {
 
 .main-list-item {
   display: inline-block;
-  margin-right: 4%;
-  width: 20%;
-  background: grey;
+  margin-right: 1%;
+  width: 23.9%;
 }
 .main-list-item:last-child {
-  margin-right: none !important;
-  background: red;
+  margin-right: 0;
 }
 
+footer {
+  border-top: 1px solid #D5D9D9;
+}
 
 
 

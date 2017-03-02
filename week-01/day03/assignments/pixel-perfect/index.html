@@ -15,9 +15,11 @@
 
 
     <header class="main-header group">
+
       <div class="main-logo">
         <a href="#"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
       </div>
+
       <nav>
         <a href="#">Become a Host</a>
         <a href="#">No time to host?</a>
@@ -26,6 +28,7 @@
         <a href="#">Help</a>
         <a class="profile-link" href="#"><img src="" alt=""><i class="fa fa-user-circle" aria-hidden="true"></i></a>
       </nav>
+
     </header>
 
 
@@ -39,30 +42,42 @@
       </header>
 
 
-      <form class="booking" action="index.html" method="post">
 
-        <div class="booking-where">
-          <label for="">Where</label>
-          <input type="text" name="" value="" placeholder="Destination, city, address">
+      <section class="find-booking">
+
+        <form class="booking" action="index.html" method="post">
+
+          <div class="booking-where">
+            <label for="">Where</label>
+            <input type="text" name="" value="" placeholder="Destination, city, address">
+          </div>
+
+          <div class="booking-when">
+            <label for="">When</label>
+            <input type="text" name="" value="" placeholder="Check in">
+            <i class="fa fa-long-arrow-right booking-arrow" aria-hidden="true"></i>
+            <input type="text" name="" value="" placeholder="Check out">
+          </div>
+
+          <div class="booking-guests">
+            <label for="">Guests</label>
+            <input type="text" name="" value="" placeholder="1 guest">
+          </div>
+
+          <div class="booking-submit">
+            <button type="button" name="submit">Search</button>
+          </div>
+
+        </form>
+
+
+        <div class="simple-search">
+          <p>Search <i class="fa fa-search" aria-hidden="true"></i></p>
         </div>
 
-        <div class="booking-when">
-          <label for="">When</label>
-          <input type="text" name="" value="" placeholder="Check in">
-          <i class="fa fa-long-arrow-right booking-arrow" aria-hidden="true"></i>
-          <input type="text" name="" value="" placeholder="Check out">
-        </div>
+      </section>
 
-        <div class="booking-guests">
-          <label for="">Guests</label>
-          <input type="text" name="" value="" placeholder="1 guest">
-        </div>
 
-        <div class="booking-submit">
-          <button type="button" name="submit">Search</button>
-        </div>
-
-      </form>
 
 
       <section class="main-list">
@@ -183,8 +198,10 @@
 
 
 
-    <footer class="wrapper">
-
+    <footer>
+      <section class="wrapper">
+        
+      </section>
     </footer>
   </body>
 </html>
