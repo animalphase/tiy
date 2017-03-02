@@ -1,4 +1,4 @@
-# Week 1 > Day 01
+# Week 1 > Day 02
 
 1. set up this git repo, along with some nice little readmes at the course, week, and day levels.
 

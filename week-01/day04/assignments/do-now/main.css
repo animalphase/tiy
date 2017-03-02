@@ -1,0 +1,115 @@
+.a {
+  border-top: 80px solid #ff5775;
+  border-right: 80px solid #ff5775;
+  border-bottom: 80px solid #ff5775;
+  border-left: 80px solid transparent;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 40px;
+}
+
+.a2 {
+  border-top: 20px solid #df41ff;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #df41ff;
+  border-left: 20px solid #df41ff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 80px;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+
+.b {
+  display: inline-block;
+  margin: 40px 80px;
+  animation: infinite-spinning 1s 2s 3 alternate backwards
+}
+  .b div {
+    display: inline-block;
+  }
+  .ba {
+    border-top: 80px solid #ff34a8;
+    border-right: 80px solid #ff34a8;
+    border-bottom: 80px solid #ff34a8;
+    border-left: 80px solid #ff34a8;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 0;
+    mix-blend-mode: additive;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .bb {
+    border-top: 80px solid #50ffd0;
+    border-right: 20px solid #50ffd0;
+    border-bottom: 80px solid #50ffd0;
+    border-left: 20px solid #50ffd0;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 0;
+    mix-blend-mode: additive;
+    border-radius: 0;
+  }
+  .bc {
+    border-top: 80px solid #ffec8b;
+    border-right: 80px solid #ffec8b;
+    border-bottom: 80px solid #ffec8b;
+    border-left: 80px solid #ffec8b;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 0;
+    mix-blend-mode: additive;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  @keyframes infinite-spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .c {
+    margin: 100px;
+    position: relative;
+    background: #f23a9d;
+    width: 300px;
+    height: 200px;
+  }
+    .ca {
+      width: 0;
+      height: 0;
+      border-bottom: 200px solid #f23a9d;
+      border-left: 100px solid transparent;
+      position: absolute;
+      top: 0px;
+      left: -100px;
+    }
+    .cb {
+      width: 0;
+      height: 0;
+      border-right: 100px solid transparent;
+      border-top: 200px solid #f23a9d;
+      position: absolute;
+      top: 0px;
+      right: -100px;
+    }
