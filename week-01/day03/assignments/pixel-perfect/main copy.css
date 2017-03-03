@@ -89,7 +89,7 @@ nav {
 
 
 .main-heading-text {
-  line-height: 1.15;
+
 }
 
 .brand-callout {
@@ -272,29 +272,25 @@ footer {
 
   .footer-bottom {
     color: #848484;
-    height: 30px;
-    vertical-align: middle;
   }
     .legal-info {
       float: left;
-      vertical-align: middle;
+      vertical-align: middle;;
     }
       .legal-info .logo {
         display: inline-block;
-        font-size: 20px;
-        height: 20px;
         line-height: 20px;
-        margin-right: 10px;
+        height: 20;
+        font-size: 20;
         vertical-align: middle;
       }
 
     .extra-links {
       float: right;
-      height: 20px;
-      list-style: none;
       margin: 0;
+      list-style: none;
       padding: 0;
-      vertical-align: middle;
+      vertical-align: middle;;
     }
       .extra-links li {
         display: inline-block;
