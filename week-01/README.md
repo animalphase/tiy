@@ -1,5 +1,7 @@
 # TIY front-end, Week 1
-## Weekly refelction
+## Weekly refelection
+
+TODO: Potentailly move this recap (and future posts) to codepen http://codepen.io/animalphase/posts/published/ 
 
 First week of class! I am really excited to go through this program. Everything seemed to fall together in my life to pull me here.
 
