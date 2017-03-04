@@ -7,9 +7,9 @@ I've been wanting to strengthen my foundational programming knowledge for a long
 
 The class is composed of a good group of folks, who have all been great to get along with so far. I have come from a background working with some  and I have found them great to get along with.
 
-I do still wonder about coming out to people—I have done nothing but be open around folks, and it has been comfortable and fine. But I also know my few comments like being the sole person to share pronouns as part of my introduction was not noticed or understood by a few folks. I've had some more specific conversations with some, or ran into others in the restroom, which has been educational for some. But as with all mixed groups, it seems there are other folks who seem to throw out incorrectly-gendered terms about me, and honestly by this point it feels trite and unnecessary to break down my status as trans, and tiresome to act as eternal educator.
+I do still wonder about coming out to people—I have done nothing but be open around folks, and it has been comfortable and fine. The groups is somewhat mixed on being able to pick up these things, though… it should all work out in time with some extra effort though.
 
-But I have also have had good discussions with other folks, bonding, or sharing feelings of being marginalized, or in proximity with intolerant folks, and methods of coping. I know there are some that I can learn from in this regard.
+But I have also have had good discussions and boding with other folks.
 
 ----
 ### New technical things to me this week:
