@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>airbb - vaction with ur bb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css" />
@@ -18,7 +19,8 @@
     <header class="main-header group">
 
       <div class="main-logo">
-        <a href="#"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
+        <a class="home-link" href="#"><i class="fa fa-moon-o" aria-hidden="true"></i></a>
+        <a class="menu-link" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
       </div>
 
       <nav>
@@ -118,6 +120,9 @@
               <div class="main-info">
                 <span class="price">$66</span> <span class="name">2 hours • food market &amp; food tastings</span>
               </div>
+              <div class="location">
+                Leccio Apartment - Cimbolello
+              </div>
               <div class="reviews">
                 <span class="rating 5"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
                 177 reviews
@@ -131,6 +136,9 @@
               <div class="item-description">
                 <div class="main-info">
                   <span class="price">$66</span> <span class="name">2 hours • food market &amp; food tastings</span>
+                </div>
+                <div class="location">
+                  Leccio Apartment - Cimbolello
                 </div>
                 <div class="reviews">
                   <span class="rating 5"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
@@ -156,7 +164,7 @@
 
 
 
-      <section class="main-list">
+      <section class="main-list featured-destinations">
 
         <h3>Featured Destinations</h3>
 
@@ -319,27 +327,75 @@
 
         <section class="footer-columns">
 
-          <div>
 
+          <form class="site-options" action="" method="">
+            <div >
+              <label for="language-selector">Language</label>
+              <select class="" name="language-select">
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+                  <option value="el">Eλληνικά</option>
+                  <option value="fr">Français</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="visuallyhidden" for="currency-selector">Currency</label>
+              <select class="" name="currency-select">
+                  <option value="TRY">TRY</option>
+                  <option value="TWD">TWD</option>
+                  <option value="UAH">UAH</option>
+                  <option value="USD">USD</option>
+                  <option value="UYU">UYU</option>
+              </select>
+            </div>
+
+
+          </form>
+
+
+          <div class="footer-links">
+            <h3>Airbb</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Policies</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Diversity &amp; Belonging</a></li>
+            </ul>
           </div>
 
-          <div>
 
+          <div class="footer-links">
+            <h3>Discover</h3>
+            <ul>
+              <li><a href="#">Trust &amp; Safety</a></li>
+              <li><a href="#">Travel Credit</a></li>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Airbb Citizen</a></li>
+              <li><a href="#">Business Travel</a></li>
+              <li><a href="#">Guidebooks</a></li>
+            </ul>
           </div>
 
-          <div>
 
+          <div class="footer-links">
+            <h3>Hosting</h3>
+            <ul>
+              <li><a href="#">Why Host</a></li>
+              <li><a href="#">Hospitality</a></li>
+              <li><a href="#">Responsible Hosting</a></li>
+            </ul>
           </div>
 
-          <div>
 
-          </div>
 
         </section>
 
         <hr>
 
-        <section class="footer-bottom">
+        <section class="footer-bottom group">
 
           <p class="legal-info">
             <i class="fa fa-moon-o logo" aria-hidden="true"></i>&copy; Airbb, Wink

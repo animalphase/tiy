@@ -13,7 +13,7 @@ body {
 h1,h2,h3,h4,h5,h6 { text-rendering: optimizeLegibility; }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 3.4em;
   font-weight: 200;
 }
 
@@ -60,28 +60,16 @@ hr {
   height: 4em;
   width: 4em;
   text-align: left;
-  position: relative;
 }
-  .home-link {
+  .main-logo a {
     display: inline-block;
     font-size: 4rem;
     height: 100%;
   }
-  .menu-link {
-    color: #4d4d4d;
-    display: block;
-    font-size: 2.6rem;
-    position: absolute;
-    top: 0;
-    right: 1rem;
-    width: 0;
-    height: 4rem;
-    line-height: 4rem;
-    vertical-align: middle;
-  }
+
 
 nav {
-  display: none;
+  display: inline;
   vertical-align: middle;
 }
   nav a {
@@ -104,7 +92,7 @@ nav {
 
 
 .main-heading-text {
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .brand-callout {
@@ -122,7 +110,7 @@ input, button, select {
   appearance: none;
   background: #fff;
   border: .1rem solid #dbdbdb;
-  border-radius: 0;
+  border-radius: .4rem;
   box-sizing: border-box;
   display: inline-block;
   font-size: 1.8rem;
@@ -146,7 +134,7 @@ input:focus, button:focus, select:focus {
 
 
 form.booking {
-  display: none;
+  display: flex;
   border: .1rem solid #DCE0E0;
   border-radius: .4rem;
   box-shadow: 0 .1rem .4rem -.1rem rgba(140,140,140,.41);
@@ -158,6 +146,7 @@ form.booking {
   .booking input, .booking button, .booking select {
     border: none;
     border-bottom: .1rem solid transparent;
+    border-radius: 0;
     display: inline-block;
     padding: .8rem 0;
   }
@@ -266,62 +255,46 @@ main {
 }
 
   main > section {
-    margin: 6rem auto;
+    margin: 8rem auto;
   }
 
 
+.main-list {
 
-
-
-  .main-list {
+}
+  .main-list-items {
+    display: flex;
   }
-    .main-list-items {
+    .main-list-item {
+      box-sizing: border-box;
+      flex: 1;
       display: block;
-      margin-left: -2.4rem;
-      margin-right: -2.4rem;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      white-space: nowrap;
+      padding-right: 1.5rem;
     }
-      .main-list-item {
-        box-sizing: border-box;
-        display: inline-block;
-        margin-right: 1.5rem;
-        width: 29rem;
-      }
-      .main-list-item:last-child {
+    .main-list-item:last-child {
+      flex: 1;
+      padding-right: 0;
+    }
 
+      .main-list-item .item-image {
+        flex: 1;
+        display: block;
+        width: 100%;
       }
-      .main-list-item:first-child {
-        margin-left: 2.4rem;
-      }
-
-        .main-list-item .item-image {
-          display: block;
-          width: 100%;
+        .item-description {
+          font-weight: 200;
+          padding-top: 1rem;
         }
-          .item-description {
-            font-weight: 200;
-            overflow: hidden;
-            padding-top: 1rem;
+          .price, .name {
+            font-weight: bold;
           }
-            .price, .name {
-              font-weight: bold;
+          .reviews {
+            font-size: 1.2rem;
+            padding-top: .5rem;
+          }
+            .rating {
+              color: #00A699;
             }
-            .reviews {
-              font-size: 1.2rem;
-              padding-top: .5rem;
-            }
-              .rating {
-                color: #00A699;
-              }
-
-
-  .featured-destinations .main-list-item {
-    width: 19rem;
-  }
-
-
 
 
 
@@ -331,7 +304,7 @@ main {
 
 footer {
   border-top: .1rem solid #D5D9D9;
-  padding: 3rem 0 5rem 0;
+  padding: 5rem 0 5rem 0;
 }
   footer h3 {
     font-size: 1.4rem;
@@ -348,16 +321,15 @@ footer {
     text-decoration: underline;
   }
 
+
   .footer-columns {
     display: flex;
-    padding: 0;
+    padding: 0 0 3rem 0;
   }
     .footer-columns > form, .footer-columns > div {
       flex: 1;
     }
-
     .footer-links {
-      display: none;
       letter-spacing: .1rem;
     }
     .footer-columns ul {
@@ -377,9 +349,9 @@ footer {
     height: 3rem;
     vertical-align: middle;
   }
-    .footer-bottom * { box-sizing: border-box; }
+  .footer-bottom * { box-sizing: border-box; }
     .legal-info {
-      display: block;
+      float: left;
       height: 3rem;
       line-height: 3rem;
       margin: 0;
@@ -395,7 +367,7 @@ footer {
       }
 
     .extra-links {
-      display: block;
+      float: right;
       height: 3rem;
       list-style: none;
       margin: 0;
@@ -405,7 +377,7 @@ footer {
       .extra-links li {
         display: inline-block;
         height: 3rem;
-        margin-right: 1.5rem;
+        margin-left: 1.5rem;
         vertical-align: middle;
       }
       .extra-links li a {
@@ -432,41 +404,8 @@ footer {
 }
 
 
-/* putting this in a max-width query because forms are styled globally,
-and this is a special-case variant for thest to <selects>
-in the mobile footer */
-@media only screen and (max-width: 800px) {
-  .site-options {
-    display: flex;
-  }
-    .site-options > div {
-      box-sizing: border-box;
-      display: block;
-      flex: 1;
-      padding-right: .5rem;
-    }
-    .site-options > div:last-child {
-      padding-right: 0rem;
-      padding-left: .5rem;
-    }
-      .site-options > div select {
-        display: block;
-        width: 100%;
-      }
-}
 
 @media only screen and (min-width: 800px) {
-
-  h1 {
-    font-size: 5.4rem;
-  }
-
-  nav {
-    display: inline;
-  }
-    .menu-link {
-      display: none;
-    }
 
   form.booking {
     display: flex;
@@ -475,62 +414,12 @@ in the mobile footer */
   div.simple-search {
     display: none;
   }
-
-
-  .main-list {
-  }
-    .main-list-items {
-      display: flex;
-      margin: 0;
-      overflow-x: auto;
-      overflow-y: auto;
-      white-space: normal;
-    }
-      .main-list-item {
-        flex: 1;
-        display: block;
-        margin: 0;
-        padding-right: 1.5rem;
-        width: auto;
-      }
-      .main-list-item:last-child {
-        padding-right: 0;
-      }
-      .main-list-item:first-child {
-        margin-left: 0;
-      }
-
-        .main-list-item .item-image {
-          flex: 1;
-        }
-
-  .featured-destinations .main-list-item {
-    width: auto;
-  }
-
-  footer {
-    padding-top: 5rem;
-  }
-  .footer-columns {
-    padding: 0 0 3rem 0;
-  }
-  .footer-links {
-    display: block;
-  }
-
-  .legal-info {
-    float: left;
-  }
-  .extra-links {
-      float: right;
-    }
-  .extra-links li {
-    margin-left: 0;
-    margin-right: 1.4rem;
-  }
-
-
 }
+
+
+
+
+
 
 
 
@@ -552,17 +441,4 @@ in the mobile footer */
   content: "";
   display: table;
   clear: both;
-}
-
-/* from HTML5 boilerplate */
-.visuallyhidden,
-.site-options label {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
 }
