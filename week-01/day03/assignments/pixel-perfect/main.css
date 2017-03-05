@@ -160,6 +160,7 @@ form.booking {
     border-bottom: .1rem solid transparent;
     display: inline-block;
     padding: .8rem 0;
+    margin-bottom: 0;
   }
   .booking input:focus, .booking button:focus, .booking select:focus {
     border-bottom: .1rem solid #008489;
