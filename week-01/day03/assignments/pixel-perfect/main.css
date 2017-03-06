@@ -39,7 +39,7 @@ hr {
 .wrapper {
   margin: 0 auto;
   max-width: 1080px;
-  /* Q: not sure if should define max-width here in rems?
+  /* NOTE: not sure if should define max-width here in rems?
      or how is viewport scale affecting this? */
   padding-left: 2.4rem;
   padding-right: 2.4rem;
@@ -289,6 +289,10 @@ main {
         display: inline-block;
         margin-right: 1.5rem;
         width: 29rem;
+        /* NOTE: width defined for consistency in mobile scrolling.
+        height can be thrown off by irregularly-size images
+        probably wrap a div around the image,
+        and define a particular aspect ratio for it to maintain? */
       }
       .main-list-item:last-child {
 
@@ -303,7 +307,7 @@ main {
         }
           .item-description {
             font-weight: 200;
-            overflow: hidden;
+            overflow: hidden; /* Airbnb cuts off text using an ellipsis */
             padding-top: 1rem;
           }
             .price, .name {
@@ -433,7 +437,7 @@ footer {
 }
 
 
-/* putting this in a max-width query because forms are styled globally,
+/* NOTE: putting this in a max-width query because forms are styled globally,
 and this is a special-case variant for thest to <selects>
 in the mobile footer */
 @media only screen and (max-width: 800px) {
