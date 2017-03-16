@@ -1,0 +1,18 @@
+@import "libraries/node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "libraries/node_modules/bourbon-neat/core/neat";
+
+body {
+  font-family:  $helvetica;
+  @include grid-container;
+  @include grid-visual;
+}
+
+.page-title {
+  @include grid-column(3);
+}
+
+.book {
+  @include grid-column(6);
+  box-sizing: border-box;
+  border: 2px solid pink;
+}

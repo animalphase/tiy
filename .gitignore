@@ -12,3 +12,6 @@ git-test/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# ignore sass files directory
+# ignore main.css.map
